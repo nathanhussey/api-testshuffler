@@ -41,6 +41,10 @@ app.use((error, req, res, next) => {
   });
 });
 
+app.use("/", (req, res) => {
+  res.send("app is running");
+});
+
 app.listen(process.env.PORT || 3001, () => {
   console.log(`app is running on ${process.env.PORT}`);
 });
