@@ -3,6 +3,7 @@ import { json, urlencoded } from "body-parser";
 import morgan from "morgan";
 import cors from "cors";
 import mongoose from "mongoose";
+import "@babel/polyfill";
 import userRouter from "./resources/user/user.router";
 import testCardRouter from "./resources/testCard/testCard.router";
 import dashboardRouter from "./resources/dashboard/dashboard.router";
