@@ -41,7 +41,7 @@ app.use((error, req, res, next) => {
   });
 });
 
-app.use("/", (req, res) => {
+app.get("/", (req, res) => {
   res.send("app is running");
 });
 
