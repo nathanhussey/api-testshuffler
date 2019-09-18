@@ -30,6 +30,7 @@
     "loldash": "^9002.0.0",
     "mongoose": "^5.6.11",
     "morgan": "^1.9.1",
+    "react-hot-loader": "^4.12.13",
     "validator": "^11.1.0"
   },
   "devDependencies": {
