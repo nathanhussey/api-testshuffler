@@ -27,6 +27,10 @@ app.use("/user", userRouter);
 app.use("/testcard", testCardRouter);
 app.use("/user/dashboard", dashboardRouter);
 
+app.get("/", (req, res) => {
+  res.send("app is running");
+});
+
 app.use((req, res, next) => {
   const error = new Error("Not Found");
   error.status = 404;
@@ -39,10 +43,6 @@ app.use((error, req, res, next) => {
       message: error.message
     }
   });
-});
-
-app.get("/", (req, res) => {
-  res.send("app is running");
 });
 
 app.listen(process.env.PORT || 3001, () => {
